@@ -1,17 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 
-function SearchBar() {
-    const [chord, setChord] = useState('');
-    const [chordSubmit, setChordSubmit] = useState('');
-    console.log('chord', chord);
-    console.log('chordSubmit', chordSubmit);
+function SearchBar({chord, setChord, chordSubmit, setChordSubmit, handleSubmit}) {
 
-    const handleSubmit = () => {
-        return (
-            setChordSubmit(chord)
-        );
-    };
 
     return (
         <form onSubmit={handleSubmit}>
