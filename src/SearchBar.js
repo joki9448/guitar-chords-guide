@@ -1,7 +1,6 @@
 import React from 'react';
-import {useState} from 'react';
 
-function SearchBar({chord, setChord, chordSubmit, setChordSubmit, handleSubmit}) {
+function SearchBar({chord, setChord, setChordSubmit, handleSubmit}) {
 
 
     return (

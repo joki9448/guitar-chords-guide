@@ -6,8 +6,8 @@ import {useState} from 'react';
 function App() {
   const [chord, setChord] = useState('');
   const [chordSubmit, setChordSubmit] = useState('');
-  console.log('chord', chord);
-  console.log('chordSubmit', chordSubmit);
+  // console.log('chord', chord);
+  // console.log('chordSubmit', chordSubmit);
 
   const handleSubmit = () => {
       return (
@@ -21,10 +21,10 @@ function App() {
       <SearchBar 
         chord={chord} 
         setChord={setChord} 
-        chordSubmit={chordSubmit} 
         setChordSubmit={setChordSubmit}
         handleSubmit={handleSubmit}
       />
+      <h1 className="chord-header">{chordSubmit}</h1>
     </div>
   );
 }
