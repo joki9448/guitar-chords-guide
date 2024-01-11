@@ -2,24 +2,39 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .header {
 }
 
 .search-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .input {
+    text-align: center;
 }
 
 .search-btn {
 }
 
 .diagram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5em;
+    width: 100vw;
+    border: 5px solid pink;
 }
 
-#chord-img {
+#chord-img {    
+    display: flex;
+    position: relative;
+    border: 5px solid green;
 }
 
 #chord-play {

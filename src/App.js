@@ -19,7 +19,7 @@ function App() {
         setChord={setChord}
         handleSubmit={handleSubmit}
       />
-      <Diagram searchedChord={initialChordSubmit} />
+      {initialChordSubmit === '' ? null : <Diagram searchedChord={initialChordSubmit} />}
     </div>
   );
 }
