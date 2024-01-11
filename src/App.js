@@ -1,32 +1,32 @@
+import React, { useState } from 'react';
 import './App.css';
-import SearchBar from './SearchBar';
-import {useState} from 'react';
+import SearchBar from './components/SearchBar';
+import Diagram from './components/Diagram';
 
 function App() {
+  const initialChordSubmit = localStorage.getItem('chordSubmit') || '';
+  console.log('initialChordSubmit', initialChordSubmit)
   const [chord, setChord] = useState('');
   const [chordSubmit, setChordSubmit] = useState('');
-  // console.log('chord', chord);
-  // console.log('chordSubmit', chordSubmit);
 
   const handleSubmit = () => {
-      return (
-          setChordSubmit(chord)
-      );
+    setChordSubmit(chord);
+    localStorage.setItem('chordSubmit', chord);
+    console.log('chord submitted', chord)
   };
 
   return (
     <div className="App">
       <h1>Chord App</h1>
-      <SearchBar 
-        chord={chord} 
-        setChord={setChord} 
-        setChordSubmit={setChordSubmit}
+      <SearchBar
+        chord={chord}
+        setChord={setChord}
         handleSubmit={handleSubmit}
       />
-      <h1 className="chord-header">{chordSubmit}</h1>
+      <h2 className="chord-header">{chordSubmit}</h2>
+      <Diagram searchedChord={initialChordSubmit} />
     </div>
   );
 }
 
 export default App;
-
