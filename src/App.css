@@ -28,13 +28,14 @@
     flex-direction: column;
     gap: 5em;
     width: 100vw;
+    padding-bottom: 5vh;
     border: 5px solid pink;
+}
+.diagram img {
+    margin-left: 1em;
 }
 
 #chord-img {    
-    display: flex;
-    position: relative;
-    border: 5px solid green;
 }
 
 #chord-play {
