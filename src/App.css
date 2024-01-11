@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .header {
@@ -24,19 +24,17 @@
 
 .diagram {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5em;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3em;
     width: 100vw;
-    padding-bottom: 5vh;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border: 5px solid pink;
 }
 .diagram img {
     margin-left: 1em;
-}
-
-#chord-img {    
-}
-
-#chord-play {
+    height: 25em;
+    box-shadow: 0em 0em 1em 0.25em;
 }

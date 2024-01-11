@@ -17,8 +17,10 @@ function App() {
       <SearchBar
         chord={chord}
         setChord={setChord}
+        searchedChord={initialChordSubmit}
         handleSubmit={handleSubmit}
       />
+      {initialChordSubmit === '' ? null : <ins className="scales_chords_api" chord={initialChordSubmit} output="sound"></ins>}
       {initialChordSubmit === '' ? null : <Diagram searchedChord={initialChordSubmit} />}
     </div>
   );
