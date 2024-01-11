@@ -1,12 +1,10 @@
 import React from 'react';
 
 function Diagram({searchedChord}) {
-    console.log('searchedChord', searchedChord);
-
     return (
-        <div>
-            <ins className="scales_chords_api" chord={searchedChord}></ins>
-            <ins className="scales_chords_api" chord={searchedChord} output="sound"></ins>
+        <div className="diagram">
+            <ins className="scales_chords_api" id="chord-img" chord={searchedChord}></ins>
+            <ins className="scales_chords_api" id="chord-play" chord={searchedChord} output="sound"></ins>
         </div>
     )
 }

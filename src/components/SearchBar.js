@@ -4,11 +4,12 @@ function SearchBar({ chord, setChord, handleSubmit }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     handleSubmit();
-    window.location.reload();
+    window.location.reload(); 
   }
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form className="search-bar" onSubmit={handleFormSubmit}> 
       <input
+        className="input"
         type="text"
         onChange={(e) => setChord(e.target.value)}
         value={chord}
