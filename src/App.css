@@ -11,10 +11,10 @@
     flex-direction: column;
     position: absolute;
     align-items: center;
-    margin-top: 1%;
-    left: 1.5%;
-    font-size: 3em;
-    font-weight: 700;
+    margin-top: 1.5%;
+    left: 2%;
+    font-size: 4em;
+    font-weight: 600;
     transform: rotate(-30deg);
     transform-origin: center center;
 }
