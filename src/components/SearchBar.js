@@ -1,6 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
+import { TbGuitarPick, TbGuitarPickFilled } from "react-icons/tb";
 
 function SearchBar({ chord, setChord, handleSubmit }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     handleSubmit();
@@ -15,8 +19,13 @@ function SearchBar({ chord, setChord, handleSubmit }) {
         value={chord}
         placeholder="Enter Chord"
       />
-      <button className="search-btn" type="submit">
-        Search
+      <button 
+        className="search-btn" 
+        type="submit" 
+        onMouseOver={() => setIsHovered(true)}
+        onMouseOut={() => setIsHovered(false)}
+      >
+        {isHovered ? <TbGuitarPickFilled size="3em" /> : <TbGuitarPick size="3em"/>}
       </button>
     </form>
   );
