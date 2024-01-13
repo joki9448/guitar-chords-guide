@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import Diagram from './components/Diagram';
+import Fretboard from './components/Fretboard';
 
 function App() {
   const initialChordSubmit = localStorage.getItem('chord') || '';
@@ -22,6 +23,7 @@ function App() {
       />
       {initialChordSubmit === '' ? null : <ins className="scales_chords_api" chord={initialChordSubmit} output="sound"></ins>}
       {initialChordSubmit === '' ? null : <Diagram searchedChord={initialChordSubmit} />}
+      <Fretboard/>
     </div>
   );
 }

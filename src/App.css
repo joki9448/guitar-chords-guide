@@ -66,11 +66,21 @@
     flex-direction: row;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-top: 13em;
-    border: 5px solid pink;
+    margin-top: 14em;
 }
 .diagram img {
     margin-left: 1em;
     height: 25em;
     box-shadow: 0em 0em 1em 0.25em grey;
+}
+
+.fretboard {
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(140deg, #b07007, #b87e20, #c08d39, #c89b51, #d0a96a, #d8b883, #dfc69c, #e7d4b5, #efe2cd );
+    margin-top: 19%;
+    box-shadow: 0em 0em 1em 0.25em #6E492F;
 }
