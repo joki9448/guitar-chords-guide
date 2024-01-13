@@ -4,11 +4,11 @@ import SearchBar from './components/SearchBar';
 import Diagram from './components/Diagram';
 
 function App() {
-  const initialChordSubmit = localStorage.getItem('chordSubmit') || '';
+  const initialChordSubmit = localStorage.getItem('chord') || '';
   const [chord, setChord] = useState('');
 
   const handleSubmit = () => {
-      localStorage.setItem('chordSubmit', chord);
+      localStorage.setItem('chord', chord);
   };
 
   return (

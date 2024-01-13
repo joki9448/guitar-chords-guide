@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SearchBar({ chord, setChord, searchedChord, handleSubmit }) {
+function SearchBar({ chord, setChord, handleSubmit }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     handleSubmit();

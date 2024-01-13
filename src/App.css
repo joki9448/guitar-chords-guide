@@ -6,17 +6,30 @@
 }
 
 .header {
+    position: absolute;
+    margin: 0;
+    left: 0;
 }
 
 .search-bar {
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
     gap: 0.5em;
+    margin-top: 3em;
 }
 
 .input {
+    height: 2em;
+    width: 10em;
+    outline: none;
     text-align: center;
+    transition: height .5s ease-in-out;
+}
+.input:focus {
+    height: 5em;
+    width: 15em;
 }
 
 .search-btn {
@@ -24,11 +37,13 @@
 
 .diagram {
     display: flex;
+    position: absolute;
     justify-content: center;
     flex-direction: row;
     width: 100vw;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-top: 13em;
     border: 5px solid pink;
 }
 .diagram img {
