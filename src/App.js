@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="header">Chord App</h1>
+      <h1 className="header"><span>Chord</span><span>Guru</span></h1>
       <SearchBar
         chord={chord}
         setChord={setChord}
