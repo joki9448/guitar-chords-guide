@@ -169,17 +169,33 @@
     .fretboard {
         margin-top: 25%;
     }
+    .diagram {
+        margin-top: 15em;
+    }
+    .diagram img {
+        height: 23em;
+    }
 
 }
 @media (max-width: 850px) {
     .header {
         font-size: 2em;
     }
+    .fretboard {
+        margin-top: 27.25%;
+    }
 }
 @media (max-width: 730px) {
     .header {
         font-size: 1.5em;
     }
+    .diagram {
+        margin-top: 13.5em;
+    }
+    .diagram img {
+        height: 22em;
+    }
+
 }
 @media (max-width: 580px) {
     .header {
