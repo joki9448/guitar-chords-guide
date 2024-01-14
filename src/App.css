@@ -21,6 +21,7 @@
     color: white;
 }
 
+
 /* SEARCH */
 .search-bar {
     display: flex;
@@ -124,4 +125,64 @@
     width: 0.5%;
     background: linear-gradient(-45deg, #edeff781, #eff1f8ab, #f1f2f9da, #f2f4f9ea, #f4f5fae8, #f2f4f9ea, #f1f2f9da, #eff1f8ab, #edeff781);
     margin-left: 15%;
+}
+
+@media (max-width: 1149px) {
+    .diagram img {
+        margin-top: -4em;
+    }
+    .header {
+        font-size: 2.75em;
+    }
+    .search-bar {
+        gap: 0.75em;
+    }
+    .input {
+        height: 1.75em;
+        width: 5.5em;
+        font-size: 1.75em;
+    }
+    .fretboard {
+        margin-top: 20%;
+    }
+}
+@media (max-width: 1040px) {
+    .header {
+        font-size: 3em;
+    }
+
+    .input {
+        height: 1.5em;
+        width: 5em;
+        font-size: 1.5em;
+    }
+    .fretboard {
+        margin-top: 22.5%;
+    }
+
+}
+@media (max-width: 930px) {
+    .header {
+        font-size: 2.5em;
+    }
+
+    .fretboard {
+        margin-top: 25%;
+    }
+
+}
+@media (max-width: 850px) {
+    .header {
+        font-size: 2em;
+    }
+}
+@media (max-width: 730px) {
+    .header {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 580px) {
+    .header {
+        font-size: 1.25em;
+    }
 }
