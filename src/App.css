@@ -19,6 +19,7 @@
     transform-origin: center center;
     text-shadow: 0.08em 0em 0.18em black;
     color: white;
+    cursor: default;
 }
 
 .guitar-icon {
