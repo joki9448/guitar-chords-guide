@@ -25,6 +25,15 @@
     position: absolute;
     right: 3%;
     margin-top: 2%;
+    animation: sway 2s ease-in-out infinite alternate;
+}
+@keyframes sway {
+    from {
+        transform: rotate(5deg)
+    }
+    to {
+        transforM: rotate(-40deg)
+    }
 }
 
 
