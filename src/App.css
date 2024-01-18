@@ -21,6 +21,12 @@
     color: white;
 }
 
+.guitar-icon {
+    position: absolute;
+    right: 3%;
+    margin-top: 2%;
+}
+
 
 /* SEARCH */
 .search-bar {
@@ -197,8 +203,24 @@
     }
 
 }
+@media (max-width: 630px) {
+    .fretboard {
+        width: 110vw;
+    }
+}
 @media (max-width: 580px) {
     .header {
         font-size: 1.25em;
+    }
+    .fretboard {
+        width: 150vw;
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        font-size: 1.25em;
+    }
+    .fretboard {
+        width: 110vw;
     }
 }
