@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.6eb7ecc4.css",
-    "main.js": "/static/js/main.196411e0.js",
-    "index.html": "/index.html",
-    "main.6eb7ecc4.css.map": "/static/css/main.6eb7ecc4.css.map",
-    "main.196411e0.js.map": "/static/js/main.196411e0.js.map"
+    "main.css": "/guitar-chords-guide/static/css/main.6eb7ecc4.css",
+    "main.js": "/guitar-chords-guide/static/js/main.196411e0.js",
+    "index.html": "/guitar-chords-guide/index.html",
+    "main.6eb7ecc4.css.map": "/guitar-chords-guide/static/css/main.6eb7ecc4.css.map",
+    "main.196411e0.js.map": "/guitar-chords-guide/static/js/main.196411e0.js.map"
   },
   "entrypoints": [
     "static/css/main.6eb7ecc4.css",
