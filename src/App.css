@@ -144,6 +144,8 @@
     margin-left: 15%;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 1149px) {
     .diagram img {
         margin-top: -4em;
@@ -178,13 +180,26 @@
     }
 
 }
-@media (max-width: 930px) {
+@media (max-width: 1024px) {
+    .fretboard {
+        margin-top: 25%;
+    }
+    .fretboard {
+        margin-top: 23%;
+        height: 20vh;
+        width: 100vw;
+    }
+    .diagram img {
+        height: 23em;
+    }
+}
+@media (max-width: 912px) {
     .header {
         font-size: 2.5em;
     }
 
     .fretboard {
-        margin-top: 25%;
+        margin-top: 28%;
     }
     .diagram {
         margin-top: 15em;
@@ -194,44 +209,89 @@
     }
 
 }
-@media (max-width: 850px) {
+@media (max-width: 820px) {
     .header {
         font-size: 2em;
     }
     .fretboard {
         margin-top: 27.25%;
     }
+    .fretboard {
+        margin-top: 30%;
+        height: 18vh;
+        width: 100vw;
+    }
+    .diagram img {
+        height: 18em;
+    }
+    .guitar-icon {
+        font-size: 0.75em;
+    }
+
 }
-@media (max-width: 730px) {
+@media (max-width: 768px) {
     .header {
         font-size: 1.5em;
     }
-    .diagram {
-        margin-top: 13.5em;
+    .fretboard {
+        margin-top: 33%;
+        height: 18vh;
+        width: 100vw;
     }
     .diagram img {
-        height: 22em;
+        height: 18em;
     }
-
+    .guitar-icon {
+        font-size: 0.75em;
+    }
 }
 @media (max-width: 630px) {
     .fretboard {
         width: 110vw;
     }
 }
-@media (max-width: 580px) {
+@media (max-width: 540px) {
     .header {
         font-size: 1.25em;
     }
     .fretboard {
-        width: 150vw;
+        margin-top: 40%;
+        height: 25vh;
+        width: 100vw;
+    }
+    .diagram img {
+        height: 30vh;
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     .header {
         font-size: 1.25em;
     }
     .fretboard {
-        width: 110vw;
+        margin-top: 63%;
+        height: 15vh;
+        width: 120vw;
     }
+    .diagram img {
+        margin-top: 0.05%;
+        height: 20vh;
+    }
+    .guitar-icon {
+        font-size: 0.5em;
+    }
+}
+@media (max-width: 390px) {
+    .fretboard {
+        margin-top: 75%;
+        height: 10vh;
+        width: 120vw;
+    }
+    .diagram img {
+        margin-top: 5%;
+        height: 18vh;
+    }
+    .guitar-icon {
+        font-size: 0.5em;
+    }
+
 }
